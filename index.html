@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+
+
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        body{
+            background-image: url(/img/lancient.jpg);
+            background-size: cover;
+            
+        }
+        .side-bar{
+            /* display: flex; */
+            width: 10vh;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+           background-color: rgb(86, 251, 251);
+            
+        }
+
+        .icons {
+    font-size: 50px;
+    margin: 20px auto 0;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   
+}
+
+.icon1 ul li {
+    font-size: 30px;
+    margin: 20px auto 0;
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+}
+        header{
+            width: 100%;
+            height: 15vh;
+            /* background-color: black; */
+           color: rgb(252, 252, 254);
+            display: flex;
+            justify-content: right;
+            align-items: center;
+           
+
+        }
+       nav ul li{
+            display: flex;
+         padding: 10px;
+         padding-right: 40px;
+         /* float: right; */
+         font-size: 25px;
+         cursor: pointer;
+         display: inline-block
+            ;
+        }
+    li:hover{
+        color: rgb(255, 45, 45);
+    }
+        .content {
+            min-height: calc(96vh - 58px - 12vh);
+            font-size: 30px;
+            color: rgb(254, 254, 254);
+            font-style: italic;
+           
+        }
+        h1{
+            width: 50%;
+            float: right;
+            margin: 30px;
+        }
+        p{
+            width: 50%;
+            float: right;
+           padding: 10px 25px;
+        }
+        img{
+            position: absolute;
+            top: 130px;
+            left: 200px;
+            width: 420px;
+            height: 510px;
+          background: transparent;
+        }
+        button{
+            width: 270px;
+            height: 60px;
+            position: absolute;
+            border: 3px solid hsl(0, 100%, 100%);
+            border-radius: 9px;
+            color: aqua;
+            bottom: 80px;
+            right: 160px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 25px;
+            background: transparent;
+            
+        }
+        button:hover{
+           background-color: rgb(204, 157, 247);
+        }
+        footer {
+            width: 100%;
+            height: 70px;
+          /* background-color: blue; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: rgb(252, 249, 249);
+        }
+    </style>
+</head>
+<body>
+    <div class="side-bar">
+        <div class="icons"><i class="bi bi-list"></i></div><br>
+       
+        <div class="icon1">
+            <ul>
+           <li> <i class="bi bi-house"></i></li>
+           <li>  <i class="bi bi-book"></i></li>
+           <li> <i class="bi bi-bell"></i></li>
+           <li> <i class="bi bi-graph-up-arrow"></i></li>
+           <li> <i class="bi bi-bookmarks-fill"></i></li>
+           <li>  <i class="bi bi-person-plus"></i></li>
+        </ul>
+        </div>
+     
+    </div>
+    <header>
+        <nav>
+            <ul> 
+                <li>HOME</li>
+                <li>ABOUT US</li>
+                <li>ASSIGNMENT</li>
+                <li>MY PROJECT</li>
+                <li>CONTACT US</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+      
+      <h1>Hello folks! , I am Sourabh Sahu !! </h1> <br>
+      <p>“Take up one idea, make that one idea your life. Think of it, dream of it, Live on that idea let the brain, muscles, nerves, every part of your body be full of that idea, and just leave every other idea alone. This is the way to success.”</p> <br>
+      <p>"The world is a great Gyamanism where we came to learn make storng ourself"</p>
+      <img src="img/viveka.jpg" alt="">
+      <button>Thanks for Visiting !</button>
+    </div>
+    <footer>
+        Copyright &copy; Sourabh SCSE VIT 
+    </footer>
+</body>
+</html>
