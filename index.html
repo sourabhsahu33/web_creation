@@ -2,52 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Web</title>
+    <meta name="description" content="Personal portfolio website showcasing profile, projects, and contact information.">
+    <meta name="author" content="Your Name">
+    <title>Your Name | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="side-bar">
-        <div class="icons"><i class="bi bi-list"></i></div><br>
-       
-        <div class="icon1">
-            <ul>
-           <li> <i class="bi bi-house"></i></li>
-           <li>  <i class="bi bi-book"></i></li>
-           <li> <i class="bi bi-bell"></i></li>
-           <li> <i class="bi bi-graph-up-arrow"></i></li>
-           <li> <i class="bi bi-bookmarks-fill"></i></li>
-           <li>  <i class="bi bi-person-plus"></i></li>
-        </ul>
-        </div>
-     
-    </div>
-    <header>
-        <nav>
-            <ul> 
-                <li>HOME</li>
-                <li>ABOUT US</li>
-                <li>ASSIGNMENT</li>
-                <li>MY PROJECT</li>
-                <li>CONTACT US</li>
+    <aside class="sidebar" aria-label="Sidebar navigation">
+        <button class="sidebar__menu-btn" type="button" aria-label="Open navigation menu">
+            <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
+
+        <nav class="sidebar__nav" aria-label="Quick links">
+            <ul class="sidebar__nav-list">
+                <li class="sidebar__nav-item">
+                    <a href="#home" class="sidebar__nav-link" aria-label="Home">
+                        <i class="bi bi-house" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="#about" class="sidebar__nav-link" aria-label="About">
+                        <i class="bi bi-book" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="#updates" class="sidebar__nav-link" aria-label="Notifications">
+                        <i class="bi bi-bell" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="#skills" class="sidebar__nav-link" aria-label="Skills and growth">
+                        <i class="bi bi-graph-up-arrow" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="#projects" class="sidebar__nav-link" aria-label="Projects">
+                        <i class="bi bi-bookmarks-fill" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="sidebar__nav-item">
+                    <a href="#contact" class="sidebar__nav-link" aria-label="Contact">
+                        <i class="bi bi-person-plus" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <header class="header" id="home">
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a href="#home" class="main-nav__link">Home</a></li>
+                <li class="main-nav__item"><a href="#about" class="main-nav__link">About</a></li>
+                <li class="main-nav__item"><a href="#assignment" class="main-nav__link">Assignments</a></li>
+                <li class="main-nav__item"><a href="#projects" class="main-nav__link">Projects</a></li>
+                <li class="main-nav__item"><a href="#contact" class="main-nav__link">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div class="content">
-      
-      <h1>Hello folks! , I am Sourabh Sahu !! </h1> <br>
-      <p>“Take up one idea, make that one idea your life. Think of it, dream of it, Live on that idea let the brain, muscles, nerves, every part of your body be full of that idea, and just leave every other idea alone. This is the way to success.”</p> <br>
-      <p>"The world is a great Gyamanism where we came to learn make storng ourself"</p>
-      <img src="img/viveka.jpg" alt="">
-      <button>Thanks for Visiting !</button>
-    </div>
-    <footer>
-        Copyright &copy; Sourabh SCSE VIT 
+
+    <main class="main-content">
+        <section class="hero" id="about">
+            <div class="hero__content">
+                <h1 class="hero__title">Hello, I am Your Name</h1>
+                <p class="hero__description">
+                    I am passionate about learning, building meaningful projects, and continuously improving my skills.
+                </p>
+
+                <blockquote class="hero__quote">
+                    "Take up one idea. Make that one idea your life. Think of it, dream of it, live on that idea."
+                </blockquote>
+
+                <p class="hero__text">
+                    The world is a place to learn, grow, and become stronger through experience and dedication.
+                </p>
+
+                <a href="#contact" class="btn btn--primary">Get in Touch</a>
+            </div>
+
+            <figure class="hero__media">
+                <img src="img/viveka.jpg" alt="Inspirational profile visual" class="hero__image">
+            </figure>
+        </section>
+
+        <section class="section" id="assignment">
+            <h2 class="section__title">Assignments</h2>
+            <p class="section__text">Add your academic or professional assignments here.</p>
+        </section>
+
+        <section class="section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <p class="section__text">Highlight your featured work, achievements, and technical projects.</p>
+        </section>
+
+        <section class="section" id="contact">
+            <h2 class="section__title">Contact</h2>
+            <p class="section__text">Add your professional contact details or contact form here.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">
+            Copyright 2026 Your Name. All rights reserved.
+        </p>
     </footer>
 </body>
 </html>
